@@ -31,4 +31,3 @@ you are encouraged to create a file next to `settings.py` called
 Don't forget that Postgres needs to be running on your local machine
 before running `python manage.py runserver`
 
-
