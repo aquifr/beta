@@ -1,0 +1,6 @@
+
+
+__pycache__/
+production_settings.py
+venv-aquifr/
+db.sqlite3
