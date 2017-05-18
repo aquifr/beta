@@ -1,28 +1,5 @@
 # Aquifr Open-Source Crowdfunding Platform
 
-## Getting Started (back-end development)
-
-Using a virtual environment is preferred to avoid potential conflicts with other python/django installations. The following steps assume you're running OSX and have homebrew installed. Installing virtualenv wrapper is optional, but does streamline the process of creating more virtualenvs. 
-
--   Install Python3: `brew install python3`
--   Install virtualenv: `brew install pyenv-virtualenv` 
--   Install pip: `curl https://bootstrap.pypa.io/get-pip.py | python3`
--   Install virtualenvwrapper: `pip install virtualenvwrapper`
-    -   The following will have to be added to your bash source file, and sets where virtual environments are stored, the location of project directories, and the location of the installed script.
-        ```
-        export WORKON_HOME=$HOME/.virtualenvs
-        export PROJECT_HOME=$HOME/Devel
-        source /usr/local/bin/virtualenvwrapper.sh
-        ```
-    -   For more information, refer to virtualenvwrapper [documentation](https://virtualenvwrapper.readthedocs.io/en/latest). 
--   Install postgres: `brew install postgresql`
-
-Once the you have the above installed, we can create a virtual environment for your Aquifr install. `mkvirtualenv aquifr` will create a virtual environment and activate it. Note the change in terminal. To exit the virtualenv, use the command `deactivate`. To load the virtualenv, use the command `workon aquifr`.
-
-With the virtualenv loaded, we can get python dependencies with pip. In the app directory, run `pip install -r requirements.txt`.
-
-
-
 To run on your local machine, make sure you have a Postgres server
 running with the following database configurations:
 
