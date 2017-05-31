@@ -37,9 +37,22 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'rest_framework',
 	'offering',
+
+    # allauth required apps:
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    # allauth social accounts permitted for social login
+    #'allauth.socialaccount.providers.facebook',
+    #'allauth.socialaccount.providers.google',
+    #'allauth.socialaccount.providers.instagram',
+    'allauth.socialaccount.providers.twitter',
 ]
+
+SITE_ID = 5108
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -68,6 +81,15 @@ TEMPLATES = [
         },
     },
 ]
+
+# Needed for django-allauth to work:
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
 
 WSGI_APPLICATION = 'aquifr.wsgi.application'
 
