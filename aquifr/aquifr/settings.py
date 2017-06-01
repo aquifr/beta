@@ -44,12 +44,12 @@ INSTALLED_APPS = [
     # allauth required apps:
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
     # allauth social accounts permitted for social login
-    #'allauth.socialaccount.providers.facebook',
-    #'allauth.socialaccount.providers.google',
-    #'allauth.socialaccount.providers.instagram',
-    'allauth.socialaccount.providers.twitter',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.instagram',
+    # 'allauth.socialaccount.providers.twitter',
 ]
 
 SITE_ID = 5108
