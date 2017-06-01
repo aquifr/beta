@@ -3,4 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("This is the profile page.")
+    if request.user and request.user.is_authenticated:
+        return HttpResponse("Welcome, {}!".format(request.user) )
+    return HttpResponse("This is the profile page. You are not currently logged in.")
