@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'rest_framework',
 	'offering',
-
+    'userprofile',
     # allauth required apps:
     'allauth',
     'allauth.account',
