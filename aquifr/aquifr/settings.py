@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     # 'allauth.socialaccount.providers.twitter',
 ]
 
+ACCOUNT_EMAIL_REQUIRED = True
 SITE_ID = 5108
 
 MIDDLEWARE = [
