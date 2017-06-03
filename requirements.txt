@@ -1,8 +1,15 @@
-appdirs==1.4.3
-Django==1.11.1
-djangorestframework==3.6.2
-packaging==16.8
-psycopg2==2.7.1
-pyparsing==2.2.0
-pytz==2017.2
-six==1.10.0
+Package             Version 
+------------------- --------
+appdirs             1.4.3   
+Django              1.11.1  
+django-filter       1.0.4   
+djangorestframework 3.6.2   
+Markdown            2.6.8   
+packaging           16.8    
+pip                 9.0.1   
+psycopg2            2.7.1   
+pyparsing           2.2.0   
+pytz                2017.2  
+setuptools          35.0.2  
+six                 1.10.0  
+wheel               0.30.0a0
